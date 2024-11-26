@@ -1,0 +1,46 @@
+/* Navbar Styles */
+.navbar {
+  z-index: 10;
+  padding: 20px 10px 10px 10px !important;
+  background-color: whitesmoke !important;
+}
+
+.navbar .btn {
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar .rounded-circle {
+  width: 40px;
+  height: 40px;
+}
+.nav ul {
+  list-style-type: none; /* Removes the circles */
+  padding-left: 0; /* Optional: Removes extra padding */
+  margin: 0; /* Ensures consistent spacing */
+}
+
+.nav ul li a {
+  text-decoration: none; /* Optional: Ensures no underline for links */
+  color: inherit; /* Keeps the text color consistent */
+}
+.nav-link {
+  color: #6c757d; /* Default text color */
+  font-weight: normal;
+  transition: all 0.3s ease; /* Optional: Smooth transitions */
+}
+
+.nav-link.active {
+  color: #0d6efd; /* Highlight color for active link */
+  font-weight: bold; /* Makes it stand out */
+  background-color: #f8f9fa; /* Optional: Add a background color for active */
+  border-radius: 4px; /* Optional: Rounded edges for better style */
+}
+
+.nav-link:hover {
+  color: #0d6efd; /* Hover effect */
+}

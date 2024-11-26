@@ -1,0 +1,32 @@
+.custom-modal-dialog {
+  max-width: 700px;
+}
+
+.custom-modal-button {
+  padding: 0.5rem 0rem;
+  min-width: 100px;
+}
+
+.custom-modal-button.disagree {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.37);
+}
+.custom-modal-button.agree {
+  background-color: rgba(74, 133, 246, 1);
+  color: white;
+}
+
+.custom-modal-button.agree:hover {
+  background-color: rgba(74, 133, 246, 0.9);
+}
+.custom-modal-button.disagree:hover {
+  color: rgba(0, 0, 0, 0.67);
+  border: 1px solid rgba(0, 0, 0, 0.54);
+}
+
+@media (min-width: 567px) {
+  .custom-modal-button {
+    min-width: 130px;
+  }
+}

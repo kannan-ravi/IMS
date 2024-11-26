@@ -1,0 +1,50 @@
+.heading {
+  color: rgba(74, 133, 246, 1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  color: gray;
+}
+
+.search-input {
+  outline: none;
+  border: none;
+  padding: 0.8rem 2rem 0.8rem 3rem;
+}
+
+.search-link {
+  background-color: rgba(74, 133, 246, 1);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid rgba(74, 133, 246, 1) !important;
+  text-decoration: none;
+}
+
+.search-link:hover {
+  background-color: transparent;
+  color: rgba(74, 133, 246, 1);
+}
+
+.filter-icon {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .search-container {
+    width: fit-content;
+  }
+
+  .search-input {
+    padding: 0.7rem 2rem 0.7rem 3rem;
+  }
+
+  .search-link {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,37 @@
+ .search-container {
+            display: flex;
+            align-items: center;
+           
+           
+            padding: 5px;
+        }
+        .search-container input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            flex: 1;
+            border-radius: 5px;
+        }
+        .search-container input::placeholder {
+            color: #aaa;
+        }
+        .search-container button {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        .search-container button:hover {
+            background-color: #357ae8;
+        }
+        .search-container .filter-icon {
+            margin-left: 10px;
+            color: #666;
+            cursor: pointer;
+            font-size: 16px;
+        }
+		

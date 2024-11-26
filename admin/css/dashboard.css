@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Dashboard Cards */
+.info-box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: left !important;
+  padding-top: 35px !important;
+}
+
+.info-box h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.info-box p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.mb-4 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #0059ff;
+}
+.tableName {
+  margin: 20px 0px 15px 0px !important;
+  font-weight: bold;
+}
+
+.text-center span {
+  font-size: 0.8rem;
+  padding: 8px 40px !important;
+  width: 150px;
+  font-weight: 200;
+}
+

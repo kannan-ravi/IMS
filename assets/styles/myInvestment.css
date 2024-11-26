@@ -1,0 +1,127 @@
+.mainContent-myInvestment {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px 50px 100px 50px;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    font-size: 1.2rem;
+    margin-left: -25px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2DAD36;
+}
+
+.text-muted {
+    color: black !important;
+}
+
+.investment-summary p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.investment-summary h2 {
+    font-size: 2rem;
+}
+
+.investment-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.investment-card p {
+    font-size: 0.9rem;
+}
+
+.investment-card h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.investment-card .fs-5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.investment-card .text-success {
+    color: #2DAD36 !important;
+}
+
+.investment-card .d-flex {
+    justify-content: space-between;
+}
+
+.row.text-center > div > .card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .mainContent-myInvestment {
+        margin: 40px 0px;
+    }
+    .row.text-center > div > .card {
+        border-radius: 5px;
+    }
+
+    .investment-summary h2 {
+        font-size: 1.3rem;
+    }
+
+    .investment-card {
+        padding: 1rem;
+    }
+
+    .investment-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .container h3 {
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .text-muted {
+        font-size: 0.9rem;
+    }
+
+    .fw-bold {
+        font-size: 1.2rem;
+    }
+
+    .mt-3 {
+        font-size: 0.8rem;
+    }
+
+    .investment-card p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+

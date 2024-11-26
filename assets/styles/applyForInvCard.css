@@ -1,0 +1,82 @@
+/* Base styles */
+.mainContent-applyForInvCard {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px 50px 0px 50px;
+    font-size: 1rem;
+}
+
+option {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    font-weight: bold;
+}
+
+form {
+    margin: 55px 50px;
+}
+
+.form-check {
+    padding: 10px 15px;
+}
+
+.form-label {
+    color: #28a745;
+}
+.form-select{
+    font-size: 0.9rem;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.text-invCard{
+    display: none;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .mainContent-applyForInvCard {
+        margin: 30px 5px;
+        font-size: 0.9rem;
+    }
+    .text-invCard{
+        display: block;
+        margin: 40px 20px;
+    }
+
+    form {
+        margin: 10px;
+    }
+    .card{
+        border-radius: 5px;
+    }
+    .row{
+        gap:15px;
+    }
+    .container h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn-success {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+
+
+

@@ -1,0 +1,74 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+}
+.content {
+  padding: 0px 10px;
+  margin-bottom: 100px;
+}
+
+.sidebar .logo {
+  width: 200px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.sidebar .nav {
+  padding-top: 1rem;
+}
+
+.sidebar .nav-link {
+  padding: 0.8rem;
+  font-size: 0.95rem;
+  color: black;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.sidebar .nav-link.dropdown-toggle::after {
+  margin-left: auto;
+}
+
+.sidebar .collapse .nav-link {
+  padding-left: 1.5rem;
+}
+
+.offcanvas.sidebar {
+  background-color: #fff;
+}
+
+.offcanvas .logo {
+  width: 150px;
+  margin: 1rem auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    display: none;
+  }
+  .content {
+    margin-left: 300px;
+  }
+}

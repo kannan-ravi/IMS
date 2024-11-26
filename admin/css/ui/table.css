@@ -1,0 +1,80 @@
+/* Table Styles */
+.table-wrapper {
+  padding-top: 1rem;
+}
+
+.custom-table-responsive::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-table-responsive::-webkit-scrollbar-track {
+  background: rgba(217, 217, 217, 1);
+}
+
+.custom-table-responsive::-webkit-scrollbar-thumb {
+  background: rgba(74, 133, 246, 1);
+  border-radius: 10px;
+}
+
+.custom-table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-table th {
+  background-color: rgba(239, 244, 250, 1);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  color: rgba(197, 206, 224, 1);
+}
+
+.custom-table td {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(239, 244, 250, 1);
+}
+
+.custom-table-badge {
+  padding: 4px 8px 6px 8px;
+}
+
+.custom-table-badge.blue {
+  background-color: rgba(217, 228, 252, 1);
+  color: rgba(0, 87, 255, 1);
+}
+.custom-table-badge.green {
+  background-color: rgba(236, 242, 217, 1);
+  color: rgba(126, 179, 26, 1);
+}
+
+.custom-table-action {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-table-action i {
+  cursor: pointer;
+}
+
+.custom-table-icon {
+  color: rgba(197, 206, 224, 1);
+}
+
+.table-form-select {
+  width: fit-content;
+}
+
+.custom-table-prev {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-table-next {
+  color: rgba(0, 0, 0, 0.5);
+}
