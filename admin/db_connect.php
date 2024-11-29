@@ -1,11 +1,11 @@
 <?php
 $server = 'localhost';
 
-$user_name = 'imstvb';
+$user_name = 'root';
 
-$pwd = '1234@ims';
+$pwd = '';
 
-$dbname = 'u123478_ims';
+$dbname = 'ims';
 
 
 

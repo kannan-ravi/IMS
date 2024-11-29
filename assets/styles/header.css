@@ -1,0 +1,30 @@
+.header-container {
+  background-color: rgba(14, 164, 85, 1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.header-title {
+  color: white;
+}
+
+.open-sidebar {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.header-profile-container i {
+  padding: 0.7rem;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}
+.header-profile {
+  max-width: 40px;
+  border-radius: 50%;
+}

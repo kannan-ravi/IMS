@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/ui/search-header.css" />
   <link rel="stylesheet" href="./css/ui/table.css" />
+  <link rel="stylesheet" href="./css/ui/modal.css" />
   <link rel="stylesheet" href="./css/dashboard.css" />
 </head>
 
@@ -77,44 +78,38 @@
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Investor ID</th>
-                <th>Email</th>
-                <th>Document Title</th>
-                <th>Validity</th>
-                <th>Action</th>
+                <th></th>
+                <th>Closure Date</th>
+                <th>Comments</th>
+                <th>Message</th>
               </tr>
             </thead>
             <tbody id="output">
               <tr>
-                <td>Des</td>
-                <td>LA-0234</td>
-                <td>mail@gmail.com</td>
-                <td>Title</td>
-                <td>1/01/24 to 1/02/24</td>
-                <td>
-                  <div class="custom-table-action">
-                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"></i>
-                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal"
-                      data-bs-target="#deleteInvestmentPlan"></i>
-                  </div>
+                <td class="d-flex flex-column align-items-start">
+                  <span class="text-secondary">Name</span>
+                  <span>mail@gmail.com</span>
                 </td>
+                <td>
+                  <span class="bg-primary text-white px-3 py-1 rounded">1 day left</span>
+                </td>
+                <td>26 Oct, 2024</td>
+                <td>Lorem Ipsum</td>
+                <td><i class="fa-regular fa-message text-secondary"></i></td>
               </tr>
               <tr>
-                <td>Des</td>
-                <td>LA-0234</td>
-                <td>mail@gmail.com</td>
-                <td>Title</td>
-                <td>1/01/24 to 1/02/24</td>
-                <td>
-                  <div class="custom-table-action">
-                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"></i>
-                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal"
-                      data-bs-target="#deleteInvestmentPlan"></i>
-                  </div>
+                <td class="d-flex flex-column align-items-start">
+                  <span class="text-secondary">Name</span>
+                  <span>mail@gmail.com</span>
                 </td>
+                <td>
+                  <span class="bg-secondary text-white px-3 py-1 rounded">Expired</span>
+                </td>
+                <td>26 Oct, 2024</td>
+                <td>Lorem Ipsum</td>
+                <td><i class="fa-regular fa-message text-secondary"></i></td>
               </tr>
+              
             </tbody>
           </table>
         </div>
@@ -137,6 +132,82 @@
               <button class="btn"><i class="fa-solid fa-arrow-right custom-table-next"></i></button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content px-3 py-4">
+
+        <div class="modal-body">
+          <h5 class="mb-0 text-center fw-semibold">Are you sure want to Edit?</h5>
+        </div>
+        <div class="d-flex justify-content-center gap-5 mt-2">
+          <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn custom-modal-button agree fw-semibold" data-bs-target="#approvedToEdit"
+            data-bs-toggle="modal">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Edit Modal After Approval -->
+  <div class="modal fade" id="approvedToEdit" data-bs-backdrop="static" aria-hidden="true"
+    aria-labelledby="approvedToEdit" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+      <div class="modal-content px-3 py-4">
+
+        <div class="modal-body">
+          <h5 class="mb-0 text-center fw-semibold">Edit Form</h5>.
+
+
+          <div class="row">
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Plan Title"
+                aria-label="Plan Title" />
+            </div>
+            <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Payment Method"
+                aria-label="Payment Method" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="You will give"
+                aria-label="You will give" /></div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Interest"
+                aria-label="Interest" /></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Year" aria-label="Year" />
+            </div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Get Amt"
+                aria-label="Get Amt" /></div>
+          </div>
+          <div class="d-flex justify-content-end gap-5 mt-4 pt-2">
+            <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn custom-modal-button agree fw-semibold"
+              data-bs-toggle="modal">Change</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Modal -->
+  <div class="modal fade" id="deleteInvestmentPlan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="deleteInvestmentPlan" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content px-3 py-4">
+
+        <div class="modal-body">
+          <h5 class="mb-0 text-center fw-semibold">Are you sure want to Delete?</h5>
+        </div>
+        <div class="d-flex justify-content-center gap-5 mt-2">
+          <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn custom-modal-button agree fw-semibold" data-bs-dismiss="modal">Yes</button>
         </div>
       </div>
     </div>
