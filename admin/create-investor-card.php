@@ -30,30 +30,44 @@
     <div class="container mt-4">
       <p class="d-lg-none">Hello, Des</p>
 
-      <h1 class="heading fw-bold">Set Forgot Password</h1>
+      <h1 class="heading fw-bold">Create Card</h1>
       <div class="d-flex gap-4 flex-column flex-md-row mt-4">
         <div class="bg-white px-3 py-4 rounded w-100">
           <div class="row">
-            <div class="col-sm-6"> <input type="text" class="form-control" placeholder="Investor Email ID"
-                aria-label="Investor Email ID" /></div>
+            <div class="col-sm-12"> <input type="text" class="form-control" placeholder="Investor ID"
+                aria-label="Investor ID" /></div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Username"
-                aria-label="Username" /></div>
-            <div class="col-sm-6 mt-3"> <input type="email" class="form-control" placeholder="Email"
-                aria-label="Email" />
+            <div class="col-sm-12 mt-3"><input type="text" class="form-control" placeholder="Full Name"
+                aria-label="Full Name" /></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Mobile No"
+                aria-label="Mobile No" /></div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Email Address"
+                aria-label="Email Address" /></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-3">
+              <select class="form-select" aria-label="Reason for Re-Issuance">
+                <option selected>Reason for Re-Issuance</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-sm-6 mt-3">
+              <select class="form-select" aria-label="Preferred Card Type">
+                <option selected>Preferred Card Type</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6 mt-3"><input type="password" class="form-control" placeholder="New Password"
-                aria-label="New Password" /></div>
-            <div class="col-sm-6 mt-3"><input type="password" class="form-control" placeholder="Confirm Password"
-                aria-label="Confirm Password" /></div>
-          </div>
           <div class="d-flex flex-column flex-md-row justify-content-md-end mt-4 px-2 mx-0 gap-3">
-            <button class="btn btn-primary">Change
-              Password</button>
-            <a href="./user-forgot-password-list.php" class="btn text-decoration-none">Cancel</a>
+            <button class="btn btn-primary">Generate Card</button>
+            <a href="./re-issuance-investor-card.php" class="btn text-decoration-none">Cancel</a>
           </div>
         </div>
       </div>

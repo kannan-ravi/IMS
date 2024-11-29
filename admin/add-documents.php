@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMS User Forgot Password List</title>
+  <title>IMS Add Documents</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -30,30 +30,42 @@
     <div class="container mt-4">
       <p class="d-lg-none">Hello, Des</p>
 
-      <h1 class="heading fw-bold">Set Forgot Password</h1>
+      <h1 class="heading fw-bold">Add Documents</h1>
       <div class="d-flex gap-4 flex-column flex-md-row mt-4">
         <div class="bg-white px-3 py-4 rounded w-100">
           <div class="row">
-            <div class="col-sm-6"> <input type="text" class="form-control" placeholder="Investor Email ID"
-                aria-label="Investor Email ID" /></div>
+            <div class="col-sm-12"> <input type="text" class="form-control" placeholder="Investor ID"
+                aria-label="Investor ID" /></div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Username"
-                aria-label="Username" /></div>
-            <div class="col-sm-6 mt-3"> <input type="email" class="form-control" placeholder="Email"
-                aria-label="Email" />
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="First Name"
+                aria-label="First Name" /></div>
+            <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Enter Year"
+                aria-label="Enter Year" />
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mt-3"><input type="password" class="form-control" placeholder="New Password"
-                aria-label="New Password" /></div>
-            <div class="col-sm-6 mt-3"><input type="password" class="form-control" placeholder="Confirm Password"
-                aria-label="Confirm Password" /></div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Last Name"
+                aria-label="Last Name" /></div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Interest"
+                aria-label="Interest" /></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Email"
+                aria-label="Email" /></div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Document Title"
+                aria-label="Document Title" /></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid From"
+                aria-label="Valid From" /></div>
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid To"
+                aria-label="Valid To" /></div>
           </div>
           <div class="d-flex flex-column flex-md-row justify-content-md-end mt-4 px-2 mx-0 gap-3">
-            <button class="btn btn-primary">Change
+            <button class="btn btn-primary">Submit
               Password</button>
-            <a href="./user-forgot-password-list.php" class="btn text-decoration-none">Cancel</a>
+            <a href="./documents.php" class="btn text-decoration-none">Cancel</a>
           </div>
         </div>
       </div>

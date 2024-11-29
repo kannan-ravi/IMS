@@ -21,76 +21,13 @@
 
 <body>
   <!-- Sidebar -->
-  <nav class="sidebar d-none d-lg-block bg-white">
-    <div class="p-3">
-      <img src="../assests/toppiVappaProfilePic.png" alt="Topi Vappa Biryani" class="logo mb-4">
-      <ul class="nav flex-column">
-        <!-- Dashboard -->
-        <li class="nav-item">
-          <a href="../adminComponents/adminDashboard.html" class="nav-link active">
-            <i class="fas fa-tachometer-alt me-2"></i><b>Dashboard</b>
-          </a>
-        </li>
-        <!-- Users -->
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#usersMenu" role="button">
-            <i class="fas fa-chart-bar me-2"></i><b>Users</b>
-          </a>
-          <ul class="collapse ps-3 mt-1" id="usersMenu">
-            <li class="nav-item"><a href="#" class="nav-link">Create Investor</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Set User Forgot Password</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Best Inv Plan</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Create Investor Card</a></li>
-          </ul>
-        </li>
-        <!-- Documents -->
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-file-alt me-2"></i><b>Documents</b>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="offcanvas offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1" id="mobileSidebar"
-    aria-labelledby="mobileSidebarLabel">
-    <div class="offcanvas-header">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <img src="../assests/toppiVappaProfilePic.png" alt="Topi Vappa Biryani" class="logo mb-4">
-      <ul class="nav flex-column">
-        <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#mobileUsersMenu" role="button">Users</a>
-          <ul class="collapse ps-3" id="mobileUsersMenu">
-            <li class="nav-item"><a href="./bestInvPlan.html" class="nav-link">Create Investor</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Set User Forgot Password</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Best Inv Plan</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Create Investor Card</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">Documents</a></li>
-      </ul>
-    </div>
-  </div>
-
+  <?php include './sidebar.php' ?>
+  
   <!-- Main Content -->
-  <div class="content flex grow-1">
+  <div class="main-container flex grow-1">
     <!-- Navbar -->
-    <nav class="navbar navbar-light px-4">
-      <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#mobileSidebar" aria-controls="mobileSidebar">
-        ☰
-      </button>
-      <span class="navbar-brand"><i class="fas fa-user-circle me-2"></i>Hello, Des</span>
-      <div class="d-flex align-items-center">
-        <span class="me-3"><i class="fas fa-user-shield me-2"></i>Des Admin</span>
-        <div class="rounded-circle bg-secondary text-white p-2" style="width: 40px; height: 40px;"></div>
-      </div>
-    </nav>
-
+    <?php include './header.php' ?>
+    
     <!-- Dashboard Content -->
     <div class="container mt-4">
       <p class="d-lg-none">Hello, Des</p>
@@ -282,6 +219,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/sidebar.js"></script>
 </body>
 
 </html>

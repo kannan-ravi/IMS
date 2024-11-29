@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMS User Forgot Password List</title>
+  <title>IMS Re-Issuance Investor Card</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +32,7 @@
     <div class="container mt-4">
       <p class="d-lg-none">Hello, Des</p>
 
-      <h1 class="heading fw-bold">Best Inv Plan</h1>
+      <h1 class="heading fw-bold">Re-Issuance Investor Card</h1>
       <div class="d-flex gap-4 flex-column flex-md-row mt-4">
         <div class="d-flex align-items-center gap-3 w-100">
           <div class="search-container position-relative d-flex align-items-center border w-100">
@@ -42,7 +42,7 @@
           <i class="fa-solid fa-filter filter-icon d-md-none"></i>
         </div>
         <div class="d-flex align-items-center justify-content-between gap-md-4">
-          <a href="./add-best-investment-plan.php" class="search-link">Add Best Plan +</a>
+          <a href="./create-investor-card.php" class="search-link">Create Card +</a>
           <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i>
         </div>
       </div>
@@ -53,51 +53,36 @@
           <table class="table custom-table">
             <thead>
               <tr>
-                <th>Plan Title</th>
-                <th>Payment Method</th>
-                <th>You will give</th>
-                <th>Interest</th>
-                <th>Year</th>
-                <th>Get Amt</th>
-                <th>Action</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Investor ID</th>
+                <th>Mobile No</th>
+                <th>Email</th>
+                <th>Reason</th>
+                <th>Card</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody id="output">
               <tr>
-                <td>Guaranteed Return Plan</td>
-                <td>
-                  <span class="badge custom-table-badge blue rounded-pill fw-normal">3 year payment</span>
-                  <span class="badge custom-table-badge green rounded-pill fw-normal">Monthly</span>
-                </td>
-                <td>10L</td>
-                <td>7.2%</td>
-                <td>3yr</td>
-                <td>1,00,000</td>
-                <td>
-                  <div class="custom-table-action">
-                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"></i>
-                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal" data-bs-target="#deleteInvestmentPlan"></i>
-                  </div>
-                </td>
+                <td>21-Oct-2024</td>
+                <td>Des</td>
+                <td>LA-0234</td>
+                <td>9876543210</td>
+                <td>mail@gmail.com</td>
+                <td>Lost</td>
+                <td>Physical Card</td>
+                <td class="text-success">Open</td>
               </tr>
               <tr>
-                <td>Guaranteed Return Plan</td>
-                <td>
-                  <span class="badge custom-table-badge blue rounded-pill fw-normal">3 year payment</span>
-                  <span class="badge custom-table-badge green rounded-pill fw-normal">Monthly</span>
-                </td>
-                <td>10L</td>
-                <td>7.2%</td>
-                <td>3yr</td>
-                <td>1,00,000</td>
-                <td>
-                  <div class="custom-table-action">
-                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"></i>
-                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal" data-bs-target="#deleteInvestmentPlan"></i>
-                  </div>
-                </td>
+                <td>21-Oct-2024</td>
+                <td>Des</td>
+                <td>LA-0234</td>
+                <td>9876543210</td>
+                <td>mail@gmail.com</td>
+                <td>Lost</td>
+                <td>Physical Card</td>
+                <td class="text-danger">Closed</td>
               </tr>
             </tbody>
           </table>
