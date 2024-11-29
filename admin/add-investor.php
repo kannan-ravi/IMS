@@ -261,7 +261,7 @@ include('./db_connect.php');
     <div class="button-container1 mt-5">
         <button class="btn application-submit" type="submit">Add Investor</button>
         <button class="btn" type="button" style="background-color: #ddd; color: #555;">
-            <a href="./invsetorlist.php" class="text-decoration-none">Cancel</a>
+            <a href="./invsetor-list.php" class="text-decoration-none">Cancel</a>
         </button>
     </div>
 </form>
