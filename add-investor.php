@@ -93,7 +93,7 @@ include('./db_connect.php');
         <div style="font-size: 50px; color: green;">✔</div>
         <h3>Well Done!</h3>
         <p>The investor has been successfully added to the system.</p>
-        <button onclick="location.href='investorlist.php'" style="padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
+        <button onclick="location.href='investor-list.php'" style="padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">
             Back To Dashboard
         </button>
     </div>

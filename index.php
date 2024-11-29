@@ -3,7 +3,7 @@ session_start();
 
 // Check if user is logged in
 if (!isset($_SESSION['user'])) {
-    header("Location: index.php");
+    header("Location: login.php");
     exit;
 }
 
@@ -134,7 +134,7 @@ $user = $_SESSION['user'];
                     <div class="row mt-4">
 					    <div class="col-md-4">
                             <div class="card text-center p-3">
-                                <p class="info-item"><i class="fas fa-chart-line text-success"></i> &nbsp;Agreement Period
+                                <p class="info-item"><i class="fas fa-chart-line text-success"></i> &nbsp;Investment Amount
                                 </p>
                                 <p class="data-value"><?php echo $user['total_invest'];?>  years</p>
                             </div>
