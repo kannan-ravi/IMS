@@ -21,68 +21,11 @@
 
 <body>
 
-    <div class="sidebar-container">
-        <aside class="sidebar">
-            <div class="sidebar-logo">
-                <img src="./assets/img/topivappa-logo-black.png" alt="" />
-            </div>
-
-            <ul class="sidebar-lists">
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-gauge"></i>
-                        Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-divide"></i>
-                        My Investment
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-download"></i>
-                        Download Agreement
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-credit-card"></i>
-                        Apply For Inv. Card
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-file"></i>
-                        Investment Plan
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-phone"></i>
-                        Investment Plan
-                    </a>
-                </li>
-            </ul>
-            <i class="fa-solid fa-xmark close-sidebar d-lg-none"></i>
-        </aside>
-    </div>
-
+    <?php include './sidebar.php'; ?>
+    
     <main class="main-container">
-        <div class="header-container">
-            <div class="container header-inner">
-                <i class="fa-solid fa-bars open-sidebar d-lg-none"></i>
-                <p class="mb-0 d-none d-lg-block header-title">Dashboard</p>
-                <div class="header-profile-container d-flex align-items-center gap-3">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-bell"></i>
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="profile picture"
-                        class="header-profile" />
-                </div>
-            </div>
-        </div>
-
+        <?php include './header.php'; ?>
+        
         <div class="container px-lg-4">
             <p class="mb-0 heading mt-4">Welcome Vignesh</p>
 
