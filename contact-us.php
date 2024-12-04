@@ -32,14 +32,14 @@
       <div class="row mt-4">
         <div class="col-md-6">
           <div class="card text-center p-3">
-            <p class="info-item"><b>Email</b></p>
-            <p class="data-value">vignesh@gmail.com</p>
+            <p class="info-item mb-2"><b>Email</b></p>
+            <p class="data-value mb-0">investment@tvb.com</p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card text-center p-3">
-            <p class="info-item"><b>Phone</b></p>
-            <p class="data-value">9791413276</p>
+            <p class="info-item mb-2"><b>Phone</b></p>
+            <p class="data-value mb-0">+91-7092670925</p>
           </div>
         </div>
       </div>

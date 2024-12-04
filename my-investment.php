@@ -55,7 +55,7 @@
         <div class="row gy-4">
           <!-- Monthly Investment Card -->
           <div class="col-lg-6">
-            <div class="card shadow-sm p-4">
+            <div class="card shadow p-4">
               <div class="d-flex justify-content-between">
                 <span class="fw-bold">Monthly</span>
                 <span class="text-muted">07-11-2024</span>
@@ -76,7 +76,7 @@
 
           <!-- Yearly Investment Card -->
           <div class="col-lg-6">
-            <div class="card shadow-sm p-4">
+            <div class="card shadow p-4">
               <div class="d-flex justify-content-between">
                 <span class="fw-bold">Yearly</span>
                 <span class="text-muted">07-11-2024</span>

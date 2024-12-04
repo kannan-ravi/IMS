@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMS - Login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/styles/login.css" />
+  <link rel="stylesheet" href="./css/login.css" />
 </head>
 
 <body class="bg-black">
@@ -15,7 +15,7 @@
       <div class="container">
         <div class="row login-container">
           <div class="col-md-6 invest">
-            <img src="./assets/img/topivappa-logo-black.png" class="w-100" alt="tvb">
+            <img src="./img/topivappa-logo-black.png" class="w-100" alt="tvb">
             <p class="text-center f-27  text-light"><b>Vappa's Capital & Marketing Pvt Ltd</b></p>
             <p class="text-center f-27  text-light">(A Part of Topi Vappa Groups)</p>
           </div>

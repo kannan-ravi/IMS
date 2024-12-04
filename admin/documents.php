@@ -39,11 +39,11 @@
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
             <input type="text" placeholder="Search" class="search-input rounded-1 outline-0 w-100" />
           </div>
-          <i class="fa-solid fa-filter filter-icon d-md-none"></i>
+          <!-- <i class="fa-solid fa-filter filter-icon d-md-none"></i> -->
         </div>
         <div class="d-flex align-items-center justify-content-between gap-md-4">
           <a href="./add-documents.php" class="search-link">Add Documents +</a>
-          <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i>
+          <!-- <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i> -->
         </div>
       </div>
 
@@ -54,9 +54,9 @@
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Investor ID</th>
                 <th>Email</th>
                 <th>Document Title</th>
+                <th>Files</th>
                 <th>Validity</th>
                 <th>Action</th>
               </tr>
@@ -64,9 +64,9 @@
             <tbody id="output">
               <tr>
                 <td>Des</td>
-                <td>LA-0234</td>
                 <td>mail@gmail.com</td>
                 <td>Title</td>
+                <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td>1/01/24 to 1/02/24</td>
                 <td>
                   <div class="custom-table-action">
@@ -79,9 +79,54 @@
               </tr>
               <tr>
                 <td>Des</td>
-                <td>LA-0234</td>
                 <td>mail@gmail.com</td>
                 <td>Title</td>
+                <td><i class="fa-solid fa-file-pdf"></i></td>
+                <td>1/01/24 to 1/02/24</td>
+                <td>
+                  <div class="custom-table-action">
+                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"></i>
+                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal"
+                      data-bs-target="#deleteInvestmentPlan"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Des</td>
+                <td>mail@gmail.com</td>
+                <td>Title</td>
+                <td><i class="fa-solid fa-file-pdf"></i></td>
+                <td>1/01/24 to 1/02/24</td>
+                <td>
+                  <div class="custom-table-action">
+                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"></i>
+                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal"
+                      data-bs-target="#deleteInvestmentPlan"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Des</td>
+                <td>mail@gmail.com</td>
+                <td>Title</td>
+                <td><i class="fa-solid fa-file-pdf"></i></td>
+                <td>1/01/24 to 1/02/24</td>
+                <td>
+                  <div class="custom-table-action">
+                    <i class="fa-solid fa-pen custom-table-icon" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"></i>
+                    <i class="fa-solid fa-trash custom-table-icon text-danger" data-bs-toggle="modal"
+                      data-bs-target="#deleteInvestmentPlan"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Des</td>
+                <td>mail@gmail.com</td>
+                <td>Title</td>
+                <td><i class="fa-solid fa-file-pdf"></i></td>
                 <td>1/01/24 to 1/02/24</td>
                 <td>
                   <div class="custom-table-action">
@@ -146,24 +191,24 @@
 
 
             <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Plan Title"
-                  aria-label="Plan Title" />
+              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Name"
+                  aria-label="Name" />
               </div>
-              <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Payment Method"
-                  aria-label="Payment Method" />
+              <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Investor ID"
+                  aria-label="Investor ID" />
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="You will give"
-                  aria-label="You will give" /></div>
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Interest"
-                  aria-label="Interest" /></div>
+              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Email"
+                  aria-label="Email" /></div>
+              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Document Title"
+                  aria-label="Document Title" /></div>
             </div>
             <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Year" aria-label="Year" />
+              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid To" aria-label="Valid To" />
               </div>
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Get Amt"
-                  aria-label="Get Amt" /></div>
+              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid From"
+                  aria-label="Valid From" /></div>
             </div>
             <div class="d-flex justify-content-end gap-5 mt-4 pt-2">
               <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">Cancel</button>

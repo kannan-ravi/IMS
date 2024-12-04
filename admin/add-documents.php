@@ -34,25 +34,8 @@
       <div class="d-flex gap-4 flex-column flex-md-row mt-4">
         <div class="bg-white px-3 py-4 rounded w-100">
           <div class="row">
-            <div class="col-sm-12"> <input type="text" class="form-control" placeholder="Investor ID"
-                aria-label="Investor ID" /></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="First Name"
-                aria-label="First Name" /></div>
-            <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Enter Year"
-                aria-label="Enter Year" />
+            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Email" aria-label="Email" />
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Last Name"
-                aria-label="Last Name" /></div>
-            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Interest"
-                aria-label="Interest" /></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Email"
-                aria-label="Email" /></div>
             <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Document Title"
                 aria-label="Document Title" /></div>
           </div>
@@ -62,9 +45,14 @@
             <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid To"
                 aria-label="Valid To" /></div>
           </div>
+          <div class="row">
+            <div class="col-sm-12 mt-3">
+              <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+              <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+          </div>
           <div class="d-flex flex-column flex-md-row justify-content-md-end mt-4 px-2 mx-0 gap-3">
-            <button class="btn btn-primary">Submit
-              Password</button>
+            <button class="btn btn-primary">Submit</button>
             <a href="./documents.php" class="btn text-decoration-none">Cancel</a>
           </div>
         </div>

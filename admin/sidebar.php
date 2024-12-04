@@ -18,8 +18,8 @@
         <div class="overflow-hidden sidebar-sub-lists-container">
           <div class="sidebar-sub-lists">
             <a href="./investor-list.php">Investor List</a>
-            <a href="./user-forgot-password-list.php">User Forgot Password List</a>
-            <a href="./best-investment-plan.php">Best Inv Plan</a>
+            <!-- <a href="./user-forgot-password-list.php">User Forgot Password List</a> -->
+            <!-- <a href="./best-investment-plan.php">Best Inv Plan</a> -->
             <a href="./re-issuance-investor-card.php">Re-Issuance Investor Card</a>
           </div>
         </div>

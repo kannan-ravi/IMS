@@ -64,7 +64,7 @@
 
                 <div class="row my-5 row-gap-4">
                     <div class="col-12 col-md-4">
-                        <div class="card">
+                        <div class="card custom-dash-card-container">
                             <div class="custom-dash-card">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <div class="d-flex flex-column custom-dash-text">
@@ -74,8 +74,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card">
+                    <div class="col-12 col-md-4 d-md-flex justify-content-center">
+                        <div class="card custom-dash-card-container">
                             <div class="custom-dash-card">
                                 <i class="fa-solid fa-file"></i>
                                 <div class="d-flex flex-column custom-dash-text">
@@ -85,8 +85,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card">
+                    <div class="col-12 col-md-4 d-md-flex justify-content-center">
+                        <div class="card custom-dash-card-container">
                             <div class="custom-dash-card">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <div class="d-flex flex-column custom-dash-text">
@@ -102,7 +102,7 @@
                     <div class="row row-gap-5">
                         <div class="col-12 col-md-6">
                             <h4 class="mb-0 heading">Nominee</h4>
-                            <div class="card mt-4">
+                            <div class="card mt-4 nominee-card-container">
                                 <div class="nominee-card">
                                     <div class="nominee-text">
                                         <i class="fa-solid fa-user"></i>
@@ -128,13 +128,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <!-- <div class="col-12 col-md-6">
                             <h4 class="mb-0 heading mb-4">Privacy & Security</h4>
                             <a href="./forgot-password.php" class="dashboard-forgot-password">
                                 <i class="fa-solid fa-lock text-black me-2"></i>
                                 Forgot Password
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

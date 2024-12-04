@@ -11,6 +11,7 @@
 
 .header-title {
   color: white;
+  font-size: 1.5rem;
 }
 
 .open-sidebar {
@@ -23,6 +24,17 @@
   color: black;
   background-color: white;
   border-radius: 50%;
+  cursor: pointer;
+}
+.header-profile-inner {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  padding-left: 1rem;
+}
+
+.header-profile-inner p {
+  font-size: 0.9rem;
 }
 .header-profile {
   max-width: 40px;

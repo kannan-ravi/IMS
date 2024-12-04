@@ -39,11 +39,11 @@
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
             <input type="text" placeholder="Search" class="search-input rounded-1 outline-0 w-100" />
           </div>
-          <i class="fa-solid fa-filter filter-icon d-md-none"></i>
+          <!-- <i class="fa-solid fa-filter filter-icon d-md-none"></i> -->
         </div>
         <div class="d-flex align-items-center justify-content-between gap-md-4">
           <a href="./create-investor-card.php" class="search-link">Create Card +</a>
-          <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i>
+          <!-- <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i> -->
         </div>
       </div>
 

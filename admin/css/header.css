@@ -6,6 +6,10 @@
   background-color: #fff;
 }
 
+.header-notification {
+  font-size: 1.4rem;
+}
+
 .open-sidebar {
   font-size: 1.4rem;
   color: black;

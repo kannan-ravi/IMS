@@ -14,12 +14,10 @@
 .info-item {
   color: #28a745;
   text-align: left;
-  margin-left: 20px;
 }
 
 .data-value {
   text-align: left;
-  margin-left: 20px;
 }
 
 .text-contactUs {
@@ -29,7 +27,6 @@
 @media (max-width: 768px) {
 
   .mainContent-contactUs {
-
     margin: 40px 10px;
     font-size: 1.1rem;
   }

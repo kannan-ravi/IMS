@@ -4,44 +4,46 @@
       <img src="./assets/img/topivappa-logo-black.png" alt="" />
     </div>
 
+    <?php
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    ?>
+
     <ul class="sidebar-lists">
       <li>
-        <a href="./index.php">
-          <i class="fa-solid fa-gauge"></i>
+        <a href="./index.php" class="<?php echo $currentPage === 'index.php' ? 'active' : ''; ?>">
+          <i class="fa-solid fa-gauge <?php echo $currentPage === 'index.php' ? 'active' : ''; ?>"></i>
           Dashboard
         </a>
       </li>
       <li>
-        <a href="./my-investment.php">
-          <i class="fa-solid fa-divide"></i>
+        <a href="./my-investment.php" class="<?php echo $currentPage === 'my-investment.php' ? 'active' : ''; ?>">
+          <i class="fa-solid fa-divide <?php echo $currentPage === 'my-investment.php' ? 'active' : ''; ?>"></i>
           My Investment
         </a>
       </li>
       <li>
-        <a href="./download-agreement.php">
-          <i class="fa-solid fa-download"></i>
+        <a href="./download-agreement.php"
+          class="<?php echo $currentPage === 'download-agreement.php' ? 'active' : ''; ?>">
+          <i class="fa-solid fa-download <?php echo $currentPage === 'download-agreement.php' ? 'active' : ''; ?>"></i>
           Download Agreement
         </a>
       </li>
       <li>
-        <a href="./apply-for-inv-card.php">
-          <i class="fa-solid fa-credit-card"></i>
+        <a href="./apply-for-inv-card.php"
+          class="<?php echo $currentPage === 'apply-for-inv-card.php' ? 'active' : ''; ?>">
+          <i
+            class="fa-solid fa-credit-card <?php echo $currentPage === 'apply-for-inv-card.php' ? 'active' : ''; ?>"></i>
           Apply For Inv. Card
         </a>
       </li>
       <li>
-        <a href="./investment-plan.php">
-          <i class="fa-solid fa-file"></i>
-          Investment Plan
-        </a>
-      </li>
-      <li>
-        <a href="./contact-us.php">
-          <i class="fa-solid fa-phone"></i>
+        <a href="./contact-us.php" class="<?php echo $currentPage === 'contact-us.php' ? 'active' : ''; ?>">
+          <i class="fa-solid fa-phone <?php echo $currentPage === 'contact-us.php' ? 'active' : ''; ?>"></i>
           Contact Us
         </a>
       </li>
     </ul>
+
     <i class="fa-solid fa-xmark close-sidebar d-lg-none"></i>
   </aside>
 </div>

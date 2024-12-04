@@ -26,6 +26,10 @@
   color: rgba(15, 169, 88, 1);
 }
 
+.custom-dash-card-container {
+  box-shadow: 2px 2px 16.3px 0px rgba(0, 0, 0, 0.25);
+}
+
 .custom-dash-card {
   display: flex;
   align-items: start;
@@ -76,9 +80,22 @@
 }
 
 @media (min-width: 768px) {
+  .custom-dash-card-container {
+    width: fit-content;
+  }
+
   .custom-dash-card p {
     color: rgba(0, 0, 0, 0.58);
     font-size: 0.8rem;
+  }
+
+  .nominee-card {
+    width: fit-content;
+    padding: 2rem 3rem 2rem 2rem;
+  }
+
+  .nominee-card-container {
+    width: fit-content;
   }
 }
 @media (min-width: 1200px) {
@@ -86,8 +103,17 @@
     max-width: 150px;
   }
 
+  .custom-dash-card {
+    min-width: 250px;
+  }
+
   .custom-dash-card p {
     color: rgba(0, 0, 0, 0.58);
     font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .custom-dash-card {
+    min-width: 280px;
   }
 }
