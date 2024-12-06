@@ -1,3 +1,7 @@
+<?php
+include('db_connect.php'); 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,11 +43,11 @@
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
             <input type="text" placeholder="Search" class="search-input rounded-1 outline-0 w-100" />
           </div>
-          <!-- <i class="fa-solid fa-filter filter-icon d-md-none"></i> -->
+          <i class="fa-solid fa-filter filter-icon d-md-none"></i>
         </div>
         <div class="d-flex align-items-center justify-content-between gap-md-4">
           <a href="./create-investor-card.php" class="search-link">Create Card +</a>
-          <!-- <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i> -->
+          <i class="fa-solid fa-filter filter-icon d-none d-md-block"></i>
         </div>
       </div>
 
@@ -60,130 +64,58 @@
                 <th>Email</th>
                 <th>Reason</th>
                 <th>Card</th>
-                <th>Status</th>
               </tr>
             </thead>
             <tbody id="output">
+			 <?php
+            $query = "SELECT * FROM apply_invcard ORDER BY id DESC";
+            $result = mysqli_query($conn, $query);
+            while ($row = mysqli_fetch_array($result)) {
+                ?>
               <tr>
-                <td>21-Oct-2024</td>
-                <td>Des</td>
-                <td>LA-0234</td>
-                <td>9876543210</td>
-                <td>mail@gmail.com</td>
-                <td>Lost</td>
-                <td>Physical Card</td>
-                <td class="text-success">Open</td>
+                <td><?php echo date("d/m/y", strtotime($row['updated_on'])); ?></td>
+                <td><?php echo $row['full_name']; ?></td>
+                <td><?php echo $row['investor_id']; ?></td>
+                <td><?php echo $row['phone']; ?></td>
+                <td><?php echo $row['email']; ?></td>
+				      <td><?php echo $row['reasons']; ?></td>
+                <td><?php echo $row['card_type']; ?></td>
               </tr>
-              <tr>
-                <td>21-Oct-2024</td>
-                <td>Des</td>
-                <td>LA-0234</td>
-                <td>9876543210</td>
-                <td>mail@gmail.com</td>
-                <td>Lost</td>
-                <td>Physical Card</td>
-                <td class="text-danger">Closed</td>
-              </tr>
+              <?php
+            }
+            ?>
             </tbody>
           </table>
         </div>
+  </div>
+       <div class="mt-4 d-md-flex align-items-md-center justify-content-md-center gap-md-4 gap-lg-5">
+  <div class="d-flex align-items-center justify-content-between gap-md-3 gap-lg-4">
+    <p class="mb-0">Items per page:</p>
+    <select class="form-select table-form-select" id="maxRows" aria-label="Items per page">
+      <option value="5" selected>5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+  </div>
 
-        <div class="mt-4 d-md-flex align-items-md-center justify-content-md-center gap-md-4 gap-lg-5">
-          <div class="d-flex align-items-center justify-content-between gap-md-3 gap-lg-4">
-            <p class="mb-0">Items per page:</p>
-            <select class="form-select table-form-select" aria-label="Items per page">
-              <option selected value="5">5</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-              <option value="20">20</option>
-            </select>
-          </div>
-
-          <div class="d-flex align-items-center justify-content-between mt-3 mt-md-0 gap-md-3 gap-lg-4">
-            <p class="mb-0">1-2 of 10</p>
-            <div class="d-flex">
-              <button class="btn"><i class="fa-solid fa-arrow-left custom-table-prev"></i></button>
-              <button class="btn"><i class="fa-solid fa-arrow-right custom-table-next"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="d-flex align-items-center justify-content-between mt-3 mt-md-0 gap-md-3 gap-lg-4">
+    <p class="mb-0 pagination-info">1-5 of 10</p>
+    <div class="d-flex">
+      <button class="btn custom-table-prev" disabled>
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="btn custom-table-next">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
     </div>
+  </div>
+</div>
 
-    <!-- Edit Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content px-3 py-4">
-
-          <div class="modal-body">
-            <h5 class="mb-0 text-center fw-semibold">Are you sure want to Edit?</h5>
-          </div>
-          <div class="d-flex justify-content-center gap-5 mt-2">
-            <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">No</button>
-            <button type="button" class="btn custom-modal-button agree fw-semibold" data-bs-target="#approvedToEdit"
-              data-bs-toggle="modal">Yes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Edit Modal After Approval -->
-    <div class="modal fade" id="approvedToEdit" data-bs-backdrop="static" aria-hidden="true"
-      aria-labelledby="approvedToEdit" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
-        <div class="modal-content px-3 py-4">
-
-          <div class="modal-body">
-            <h5 class="mb-0 text-center fw-semibold">Edit Form</h5>.
-
-
-            <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Plan Title"
-                  aria-label="Plan Title" />
-              </div>
-              <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Payment Method"
-                  aria-label="Payment Method" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="You will give"
-                  aria-label="You will give" /></div>
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Interest"
-                  aria-label="Interest" /></div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Year" aria-label="Year" />
-              </div>
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Get Amt"
-                  aria-label="Get Amt" /></div>
-            </div>
-            <div class="d-flex justify-content-end gap-5 mt-4 pt-2">
-              <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn custom-modal-button agree fw-semibold"
-                data-bs-toggle="modal">Change</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
 
     <!-- Delete Modal -->
-    <div class="modal fade" id="deleteInvestmentPlan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="deleteInvestmentPlan" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content px-3 py-4">
-
-          <div class="modal-body">
-            <h5 class="mb-0 text-center fw-semibold">Are you sure want to Delete?</h5>
-          </div>
-          <div class="d-flex justify-content-center gap-5 mt-2">
-            <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">No</button>
-            <button type="button" class="btn custom-modal-button agree fw-semibold" data-bs-dismiss="modal">Yes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
   </div>
 
@@ -192,3 +124,58 @@
 </body>
 
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const table = document.querySelector('.custom-table');
+  const maxRowsDropdown = document.getElementById('maxRows');
+  const prevButton = document.querySelector('.custom-table-prev');
+  const nextButton = document.querySelector('.custom-table-next');
+  const paginationInfo = document.querySelector('.pagination-info');
+
+  let currentPage = 1;
+  let rowsPerPage = parseInt(maxRowsDropdown.value);
+  const rows = table.querySelectorAll('tbody tr');
+  const totalRows = rows.length;
+
+  function updateTable() {
+    const startRow = (currentPage - 1) * rowsPerPage;
+    const endRow = currentPage * rowsPerPage;
+
+    rows.forEach((row, index) => {
+      if (index >= startRow && index < endRow) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    paginationInfo.textContent = `${startRow + 1}-${Math.min(endRow, totalRows)} of ${totalRows}`;
+    prevButton.disabled = currentPage === 1;
+    nextButton.disabled = currentPage * rowsPerPage >= totalRows;
+  }
+
+  maxRowsDropdown.addEventListener('change', () => {
+    rowsPerPage = parseInt(maxRowsDropdown.value);
+    currentPage = 1; // Reset to first page
+    updateTable();
+  });
+
+  prevButton.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updateTable();
+    }
+  });
+
+  nextButton.addEventListener('click', () => {
+    if (currentPage * rowsPerPage < totalRows) {
+      currentPage++;
+      updateTable();
+    }
+  });
+
+  // Initialize table on page load
+  updateTable();
+});
+
+  </script>
