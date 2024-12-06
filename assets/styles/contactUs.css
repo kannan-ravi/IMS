@@ -1,19 +1,18 @@
 .mainContent-contactUs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 50px 50px;
-  font-size: 1.3rem;
 }
 
 .card {
   border-radius: 10px;
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-
 }
 
 .info-item {
   color: #28a745;
   text-align: left;
+  font-size: 1.3rem;
 }
 
 .data-value {
@@ -25,12 +24,10 @@
 }
 
 @media (max-width: 768px) {
-
   .mainContent-contactUs {
     margin: 40px 10px;
-    font-size: 1.1rem;
   }
-  .card{
+  .card {
     border-radius: 5px;
   }
 
@@ -42,10 +39,12 @@
     display: block;
     margin: 40px 15px;
   }
+  .info-item {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
 
-  .info-item,
   .data-value {
     margin-left: 5px;
   }
-
 }

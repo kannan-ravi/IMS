@@ -8,12 +8,18 @@
 
 .header-notification {
   font-size: 1.4rem;
+  margin-right: 0.5rem;
 }
 
 .open-sidebar {
   font-size: 1.4rem;
   color: black;
   cursor: pointer;
+}
+
+.header-profile {
+  border-left: 1px solid rgba(194, 194, 194, 1);
+  padding-left: 1.5rem;
 }
 
 .header-profile img {
@@ -32,8 +38,14 @@
   .main-container {
     margin-left: 250px;
   }
+  .header-notification {
+    margin-right: 1rem;
+  }
+  .header-profile {
+    padding-left: 2rem;
+  }
   .header-profile img {
-    max-width: 60px;
+    max-width: 50px;
   }
 }
 

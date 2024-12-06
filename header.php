@@ -38,8 +38,8 @@
 
     </html>
 
-    <div class="header-profile-container d-flex align-items-center gap-1 gap-sm-3">
-      <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="header-profile-container d-flex align-items-center gap-2 gap-sm-3">
+      <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
       <i class="fa-regular fa-bell"></i>
       <div class="d-flex align-items-center gap-2 header-profile-inner rounded-pill">
         <div>

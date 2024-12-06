@@ -191,11 +191,8 @@
 
 
             <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Name"
+              <div class="col-sm-12 mt-3"><input type="text" class="form-control" placeholder="Name"
                   aria-label="Name" />
-              </div>
-              <div class="col-sm-6 mt-3"> <input type="text" class="form-control" placeholder="Investor ID"
-                  aria-label="Investor ID" />
               </div>
             </div>
             <div class="row">
@@ -205,10 +202,17 @@
                   aria-label="Document Title" /></div>
             </div>
             <div class="row">
-              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid To" aria-label="Valid To" />
+              <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid To"
+                  aria-label="Valid To" />
               </div>
               <div class="col-sm-6 mt-3"><input type="text" class="form-control" placeholder="Valid From"
                   aria-label="Valid From" /></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 mt-3">
+                <label for="edit-file" class="form-label">File</label>
+                <input class="form-control" type="file" id="edit-file">
+              </div>
             </div>
             <div class="d-flex justify-content-end gap-5 mt-4 pt-2">
               <button type="button" class="btn custom-modal-button disagree" data-bs-dismiss="modal">Cancel</button>

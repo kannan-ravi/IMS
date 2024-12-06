@@ -50,10 +50,18 @@
   font-size: 1rem;
   width: 80%;
 }
+
+.sidebar-lists li a.active {
+  color: rgba(74, 133, 246, 1);
+}
 .sidebar-lists li i {
   color: black;
   font-size: 1.4rem;
   width: 15%;
+}
+
+.sidebar-lists li i.active {
+  color: rgba(74, 133, 246, 1);
 }
 
 .sidebar-lists li .sidebar-down-icon {
@@ -85,6 +93,10 @@
   text-decoration: none;
   padding: 0.4rem 0;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-sub-lists a.active {
+  color: rgba(74, 133, 246, 1);
 }
 
 .close-sidebar {
